@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-ks-KNf">
-                                <rect key="frame" x="115" y="315.5" width="145" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="        Pick For You">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="57.5" y="309.5" width="260" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <state key="normal" title="Pick For You" image="select (3)">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USi-Dh-gLr"/>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49f-eS-orS">
-                                <rect key="frame" x="141.5" y="449.5" width="92" height="34"/>
+                                <rect key="frame" x="141.5" y="455.5" width="92" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="想吃的類別">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,5 +160,6 @@
     </scenes>
     <resources>
         <image name="gohan39" width="590.8800048828125" height="159.1199951171875"/>
+        <image name="select (3)" width="48" height="48"/>
     </resources>
 </document>

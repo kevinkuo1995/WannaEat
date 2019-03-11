@@ -70,9 +70,15 @@ class ViewController: UIViewController,TBVDelegate,GADBannerViewDelegate,GADInte
                 title: "確認",
                 style: .default,
                 handler: {(UIAlertAction) -> Void in
-                   // let randomAD = Int(arc4random_uniform(UInt32(4)))
+                    let randomAD = Int(arc4random_uniform(UInt32(self.foodArray.count)))
+                    print(randomAD)
+                    print(randomIndex)
+                    if randomAD == randomIndex{
+                        print(randomAD)
+                        print(randomIndex)
+                        self.interstitial?.present(fromRootViewController: self)
+                    }
                     
-                    self.interstitial?.present(fromRootViewController: self)
                    
                     
                         })
@@ -144,9 +150,6 @@ class ViewController: UIViewController,TBVDelegate,GADBannerViewDelegate,GADInte
         if let loadedlists = UserDefaults.standard.stringArray(forKey: "lists"){
             foodArray = loadedlists
         }
-        let fImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-            fImageView.image = UIImage(named: "finger")
-            buttonView.addSubview(fImageView)
         
     }
 
